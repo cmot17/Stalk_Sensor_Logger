@@ -1,6 +1,5 @@
 #include "Wire.h"
 #include <Adafruit_ADS1X15.h>
-#include "PinChangeInterrupt.h"
 #include <math.h>
 #include <SPI.h>
 #include <SD.h>
@@ -40,6 +39,7 @@ void setup() {
 
   // Configure the boost converter enable pin
   pinMode(BOOST_EN, OUTPUT);
+  digitalWrite(BOOST_EN, HIGH);
 
   delay(3000);
 

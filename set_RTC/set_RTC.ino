@@ -17,7 +17,7 @@ void setup () {
     Serial.flush();
     while (1) delay(10);
   }
-  rtc.adjust(DateTime(2014, 1, 21, 3, 0, 0));
+  rtc.adjust(DateTime(2023, 6, 16, 19, 59, 0));
   if (! rtc.initialized() || rtc.lostPower()) {
     Serial.println("RTC is NOT initialized, let's set the time!");
     // When time needs to be set on a new device, or after a power loss, the
